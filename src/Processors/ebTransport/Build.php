@@ -2,15 +2,15 @@
 
 namespace ExtraBuilder\Processors\ebTransport;
 
-use MODX\Revolution\Processors\Processor;
-use MODX\Revolution\modX;
-use xPDO\Transport\xPDOTransport;
+use modProcessor;
+use modX;
+use xPDOTransport;
 
 /**
  * Handle all build options
  *
  */
-class Build extends Processor
+class Build extends modProcessor
 {
     public $languageTopics = array('extrabuilder:default');
     public $objectType = 'extrabuilder.transport';
@@ -19,13 +19,13 @@ class Build extends Processor
 	/** @var ExtraBuilder\ExtraBuilder $eb */
 	public $eb;
 
-	/** @var \MODX\Revolution\Transport\modPackageBuilder $builder */
+	/** @var \Transport\modPackageBuilder $builder */
     protected $builder;
 
     /** @var xPDOTransport */
     protected $transport;
 
-	/** @var object ExtraBuilder\Model\ebPackage $ebPackage */
+	/** @var object ebPackage $ebPackage */
 	public $package;
 
 	/** @var $ebTransport */
@@ -197,7 +197,7 @@ class Build extends Processor
     }
 
 	/**
-     * @return \xPDO\Transport\xPDOTransport
+     * @return \xPDOTransport
      */
     public function createPackage()
     {

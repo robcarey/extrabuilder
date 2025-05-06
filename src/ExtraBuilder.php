@@ -1,18 +1,6 @@
 <?php
 
-//v3 only
-namespace ExtraBuilder;
 
-use ExtraBuilder\Model\ebPackage;
-use ExtraBuilder\Model\ebObject;
-use ExtraBuilder\Model\ebField;
-use ExtraBuilder\Model\ebRel;
-use ExtraBuilder\Model\ebTransport;
-use MODX\Revolution\modX;
-use xPDO\xPDO;
-use RecursiveDirectoryIterator;
-use RecursiveIteratorIterator;
-//v3 only
 
 /**
  * ExtraBuilder main service class

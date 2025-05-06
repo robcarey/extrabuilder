@@ -1,9 +1,6 @@
 <?php
 
-//v3 only
-use MODX\Revolution\modExtraManagerController;
-use xPDO\xPDO;
-//v3 only
+
 
 /**
  * Base controller for showing ExtraBuilder

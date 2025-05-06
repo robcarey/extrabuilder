@@ -2,12 +2,12 @@
 
 namespace ExtraBuilder\Processors;
 
-use MODX\Revolution\Processors\Model\GetListProcessor;
-use MODX\Revolution\Model\modCateogry;
-use xPDO\Om\xPDOQuery;
+use modObjectGetListProcessor;
+use modCateogry;
+use xPDOQuery;
 use xPDO;
 
-class GetList extends GetListProcessor {
+class GetList extends modObjectGetListProcessor {
     public $classKey;
     public $languageTopics = ['extrabuilder:default'];
     public $defaultSortField = 'id';

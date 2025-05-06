@@ -2,16 +2,16 @@
 
 namespace ExtraBuilder\Processors\ebPackage;
 
-use ExtraBuilder\Model\ebPackage;
-use ExtraBuilder\Model\ebObject;
-use ExtraBuilder\Model\ebField;
-use ExtraBuilder\Model\ebRel;
-use ExtraBuilder\Model\ebTransport;
-use \MODX\Revolution\Processors\Processor;
+use ebPackage;
+use ebObject;
+use ebField;
+use ebRel;
+use ebTransport;
+use \modProcessor;
 use SimpleXMLElement;
 use DOMDocument;
 
-class ImportSchema extends Processor {
+class ImportSchema extends modProcessor {
     public $languageTopics = ['extrabuilder:default'];
     public $objectType = 'extrabuilder.';
 

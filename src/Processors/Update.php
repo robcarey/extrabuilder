@@ -2,10 +2,10 @@
 
 namespace ExtraBuilder\Processors;
 
-use MODX\Revolution\Processors\Model\UpdateProcessor;
-use xPDO\Om\xPDOQuery;
+use modObjectUpdateProcessor;
+use xPDOQuery;
 
-class Update extends UpdateProcessor {
+class Update extends modObjectUpdateProcessor {
     public $classKey;
     public $languageTopics = ['extrabuilder:default'];
     public $objectType = 'extrabuilder.';
@@ -24,7 +24,7 @@ class Update extends UpdateProcessor {
      * This is only needed for inline editing which sends
      * the data in a different format.
      * 
-     * UpdateProcessor extends ModelProcessor extends Processor.
+     * UpdateProcessor extends modObjectProcessor extends modProcessor.
      * The data is not automatically translated into the object
      * in any of these classes, you must parse the JSON.
      * 

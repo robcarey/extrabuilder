@@ -2,9 +2,9 @@
 
 namespace ExtraBuilder\Processors;
 
-use MODX\Revolution\Processors\Model\CreateProcessor;
+use modObjectCreateProcessor;
 
-class Create extends CreateProcessor {
+class Create extends modObjectCreateProcessor {
     public $classKey;
     public $languageTopics = ['extrabuilder:default'];
     public $objectType = 'extrabuilder.';

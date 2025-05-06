@@ -2,14 +2,14 @@
 
 namespace ExtraBuilder\Processors\ebTransport;
 
-use MODX\Revolution\Processors\Processor;
-use MODX\Revolution\modX;
+use modProcessor;
+use modX;
 
 /**
  * Handle all build options
  *
  */
-class Actions extends Processor
+class Actions extends modProcessor
 {
     public $languageTopics = array('extrabuilder:default');
     public $objectType = 'extrabuilder.transport';

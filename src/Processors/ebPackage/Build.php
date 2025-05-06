@@ -2,8 +2,8 @@
 
 namespace ExtraBuilder\Processors\ebPackage;
 
-use MODX\Revolution\Processors\Processor;
-use MODX\Revolution\modX;
+use modProcessor;
+use modX;
 use DOMDocument;
 use SimpleXMLElement;
 use PDO;
@@ -13,12 +13,12 @@ use Exception;
  * Handle all build options
  *
  */
-class Build extends Processor
+class Build extends modProcessor
 {
     /** 
 	 * Current ebPackage object
 	 * 
-	 * @var ExtraBuilder\Model\ebPackage $package
+	 * @var ebPackage $package
 	 */
 	public $package;
 	public $languageTopics = array('extrabuilder:default');
